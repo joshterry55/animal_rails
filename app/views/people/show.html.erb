@@ -1,0 +1,14 @@
+<h1><%= @person.name %></h1>
+<hr>
+
+<div>
+  <% if @person.age %>
+    <p>Age: <%= @person.age %></p>
+  <% end %>
+  <% if @person.gender %>
+    <p>Gender: <%= @person.gender %></p>
+  <% end %>
+    <p>Alive: <%= @person.alive ? 'Yes' : 'No' %></p>
+</div>
+<hr>
+<%= link_to "Back", people_path %>
